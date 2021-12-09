@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TicTacToe Multiplayer</string>
+    <string name="first_human">You go first.</string>
+    <string name="turn_human">Your turn.</string>
+    <string name="turn_computer">Android\'s turn.</string>
+    <string name="result_tie">It\'s a tie.</string>
+    <string name="result_human_wins">You won!</string>
+    <string name="result_computer_wins">Android won!</string>
+    <string name="difficulty_choose">Elegir Dificultad!</string>
+    <string name="difficulty_easy">Facil!</string>
+    <string name="difficulty_harder">Medio!</string>
+    <string name="difficulty_expert">dificil!</string>
+    <string name="quit_question">dificil!</string>
+    <string name="yes">si</string>
+    <string name="no">no</string>
+
+</resources>
