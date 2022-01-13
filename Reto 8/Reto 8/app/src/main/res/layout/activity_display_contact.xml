@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DisplayContact" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:layout_alignLeft="@+id/editTextPhone"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#9575CD"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="277dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/spinnerClassification"
+            android:layout_alignStart="@+id/spinnerClassification"
+            android:layout_alignLeft="@+id/spinnerClassification"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-178dp"
+            android:layout_marginLeft="-178dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginBottom="28dp"
+            android:textColor="#D1C4E9"
+            android:onClick="run"
+            android:text="@string/save" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewName"
+            android:layout_alignLeft="@+id/textViewName"
+            android:layout_alignBottom="@+id/editTextEmail"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="1dp"
+            android:textColor="#9575CD"
+            android:text="@string/email"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewName"
+            android:layout_alignLeft="@+id/textViewName"
+            android:layout_alignBottom="@+id/editTextURL"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="#9575CD"
+            android:text="@string/web_page"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextEmail"
+            android:layout_alignStart="@+id/textViewURL"
+            android:layout_alignLeft="@+id/textViewURL"
+            android:textColor="#9575CD"
+            android:text="@string/phone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="-75dp"
+            android:layout_marginRight="-75dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/spinnerClassification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextService"
+            android:layout_alignEnd="@+id/editTextName"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="-49dp"
+            android:layout_marginRight="-49dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textViewProductService"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextService"
+            android:layout_alignBottom="@+id/editTextService"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="-45dp"
+            android:layout_marginRight="-45dp"
+            android:layout_marginBottom="-29dp"
+            android:layout_toStartOf="@+id/editTextEmail"
+            android:layout_toLeftOf="@+id/editTextEmail"
+            android:textColor="#9575CD"
+            android:text="@string/servicios"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewClassification"
+            android:layout_width="128dp"
+            android:layout_height="21dp"
+            android:layout_alignBaseline="@+id/spinnerClassification"
+            android:layout_alignBottom="@+id/spinnerClassification"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="-54dp"
+            android:layout_marginRight="-54dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toStartOf="@+id/editTextEmail"
+            android:layout_toLeftOf="@+id/editTextEmail"
+            android:textColor="#9575CD"
+            android:text="@string/clasificacion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextURL"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignLeft="@+id/editTextName"
+            android:ems="10"
+            android:inputType="phone|text"
+            android:minHeight="48dp">
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:layout_alignLeft="@+id/editTextPhone"
+            android:ems="10"
+            android:inputType="textUri|text"
+            android:minHeight="48dp" />
+
+    </RelativeLayout>
+</ScrollView>
