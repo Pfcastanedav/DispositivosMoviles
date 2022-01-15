@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reto9Maps</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="radio">1000</string>
+</resources>
